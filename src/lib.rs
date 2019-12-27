@@ -16,3 +16,5 @@ pub use crate::error::Error;
 // import the perlin noise generator
 mod perlin_noise;
 pub use crate::perlin_noise::PerlinNoise;
+mod perlin_noise_harmonic;
+pub use crate::perlin_noise_harmonic::PerlinNoiseHarmonic;

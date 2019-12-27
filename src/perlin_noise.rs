@@ -19,7 +19,7 @@ impl PerlinNoise {
     // this function generates a new perlin noise
     pub fn new(image_width: u32, gradient_point_nbr: u32, tilable: bool) -> Result<PerlinNoise, Error> {
 
-    // CHECKUP BEFORE GENERATING NOISE //
+    // CHECK BEFORE GENERATING NOISE //
         // check if requirements are acceptable
         if gradient_point_nbr > image_width {
             return Err(Error::TooManyGradientPointsRequested);
