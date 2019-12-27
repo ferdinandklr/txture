@@ -3,7 +3,7 @@ use crate::error::Error;
 use crate::perlin_noise::PerlinNoise;
 
 // define the harmonic perlin noise generator
-pub struct PerlinNoiseHarmonic {
+pub struct HarmonicPerlinNoise {
     image_width: u32,
     initial_gradient_point_nbr: u32,
     tilable: bool,
@@ -11,10 +11,10 @@ pub struct PerlinNoiseHarmonic {
     number_of_harmonics: u8
 }
 
-impl PerlinNoiseHarmonic {
+impl HarmonicPerlinNoise {
 
     // this function generates a new harmonic perlin noise
-    pub fn new(image_width: u32, initial_gradient_point_nbr: u32, tilable: bool, number_of_harmonics: u8) -> Result<PerlinNoiseHarmonic, Error> {
+    pub fn new(image_width: u32, initial_gradient_point_nbr: u32, tilable: bool, number_of_harmonics: u8) -> Result<HarmonicPerlinNoise, Error> {
 
     // CHECK BEFORE GENERATING NOISE //
         // check if requirements are filled
@@ -33,7 +33,7 @@ impl PerlinNoiseHarmonic {
         }
 
     // RETURN THE CALCULATED HARMONIC NOISE //
-        Ok(PerlinNoiseHarmonic {
+        Ok(HarmonicPerlinNoise {
             image_width,
             initial_gradient_point_nbr,
             tilable,
