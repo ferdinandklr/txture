@@ -5,5 +5,7 @@ name = "perlin"
 version = "0.1.0"
 
 [dependencies]
-bmp = "*"
 rand = "*"
+
+[dev-dependencies]
+bmp = "*"
