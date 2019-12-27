@@ -3,6 +3,13 @@ authors = ["Ferdinand Keller"]
 edition = "2018"
 name = "txture"
 version = "0.1.0"
+
+description = "A simple lib to generate cool textures"
+repository = "https://github.com/ferdinandklr/txture"
+readme = "README.md"
+keyword = ["perlin", "noise", "texture", "generation"]
+license = "MIT"
+
 [dependencies]
 rand = "*"
 
