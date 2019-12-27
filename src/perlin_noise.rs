@@ -20,7 +20,7 @@ impl PerlinNoise {
     pub fn new(image_width: u32, gradient_point_nbr: u32, tilable: bool) -> Result<PerlinNoise, Error> {
 
     // CHECK BEFORE GENERATING NOISE //
-        // check if requirements are acceptable
+        // check if requirements are filled
         if gradient_point_nbr > image_width {
             return Err(Error::TooManyGradientPointsRequested);
         }
@@ -94,7 +94,7 @@ impl PerlinNoise {
         (self.get_pixel(x, y) * 256.0) as u8
     }
 
-    // simple lib getters
+    // simple getters
     pub fn get_image_width(&self) -> u32 {
         self.image_width
     }
