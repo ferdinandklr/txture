@@ -18,7 +18,7 @@ fn generate_perlin_picture() -> Result<(), std::io::Error> {
     let picture_width: u32 = 256;
 
     // create a new perlin noise
-    let perlin_noise = PerlinNoise::new(picture_width, 2, true).unwrap();
+    let perlin_noise = PerlinNoise::new(picture_width, 5, false).unwrap();
 
     // create a new picture
     let mut picture = Image::new(picture_width, picture_width);
