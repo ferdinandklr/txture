@@ -7,7 +7,7 @@
 */
 
 // import the needed libraries
-use perlin::PerlinNoise;     // perlin noise generator
+use txture::PerlinNoise;     // perlin noise generator
 use bmp::{ Image, Pixel };           // a simpel libary to help create bmp pictures
 
 // this test create a picture
