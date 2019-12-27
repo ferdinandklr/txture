@@ -2,7 +2,11 @@
 authors = ["Ferdinand Keller"]
 edition = "2018"
 name = "txture"
+<<<<<<< HEAD
 version = "0.1.1"
+=======
+version = "0.1.0.1"
+>>>>>>> 67cad9f0e744937f9a15f48be55963c57fe7b0dd
 
 description = "A simple lib to generate cool textures"
 repository = "https://github.com/ferdinandklr/txture"
